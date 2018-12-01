@@ -1,0 +1,12 @@
+[package]
+name = "aoc2018"
+version = "0.1.0"
+authors = ["belst <git@bel.st>"]
+
+[lib]
+bench = false
+
+
+[dependencies]
+aoc-runner = "*"
+aoc-runner-derive = "*"

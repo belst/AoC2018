@@ -16,16 +16,12 @@ pub fn part1(input: &str) -> usize {
     dbls * trpls
 }
 
-
 #[aoc(day2, part2)]
 pub fn part2(input: &str) -> String {
-    let input = input
-        .lines()
-        .map(|l| l.as_bytes())
-        .collect::<Vec<&[u8]>>();
-    
+    let input = input.lines().map(|l| l.as_bytes()).collect::<Vec<&[u8]>>();
+
     for i in 0..input.len() {
-        'cont: for j in (i+1)..input.len() {
+        'cont: for j in (i + 1)..input.len() {
             let mut matching = Vec::new();
             let mut misses = 0;
             for n in 0..input[i].len() {
